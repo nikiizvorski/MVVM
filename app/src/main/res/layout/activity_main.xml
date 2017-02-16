@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable name="mainViewModel" type="com.nikiizvorski.mvvm.viewmodel.main.MainViewModel"/>
+    </data>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/recycler"
+            app:onUserLoad="@{mainViewModel.users}"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="180dp" />
+
+        <Button
+            android:id="@+id/btn"
+            android:text="@string/app_name"
+            android:onClick="@{mainViewModel::onClickMe}"
+            app:onWhatEver="@{0}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:text="@string/add_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{mainViewModel::addTheUser}"
+            android:id="@+id/buttona"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@+id/btn" />
+
+        <TextView
+            android:text="@string/no_users_available_nhold_item_to_delete_a_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_below="@+id/btn"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@={mainViewModel.secondName}"
+            android:hint="@string/lastname"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_above="@+id/buttona"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="22dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@={mainViewModel.firstName}"
+            android:hint="@string/firstname"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_above="@+id/editText2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@{mainViewModel.user.firstName}"
+            android:id="@+id/first"
+            android:layout_margin="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@{mainViewModel.user.lastName}"
+            android:id="@+id/second"
+            android:layout_margin="5dp"
+            android:layout_alignBaseline="@+id/first"
+            android:layout_alignBottom="@+id/first"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MVVM</string>
+    <string name="no_users_available_nhold_item_to_delete_a_row">No Users available! \nHold item to delete a row!</string>
+    <string name="lastname">LastName</string>
+    <string name="add_user">ADD USER</string>
+    <string name="firstname">FirstName</string>
+</resources>
