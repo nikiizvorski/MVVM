@@ -48,7 +48,9 @@ How is this project structured?
 
 Observables?
 
-- Yep simply checking 
+- Yep simply check the project
+
+- It support Observables and ObservableFields Two way data binding etc..
 
 What is happening here?
 
@@ -79,6 +81,8 @@ How is MVVM bad or good?
 Don't belive what i am trying to explain to you for free?
 
 - Check latest GoogleIO if you don't belive me. And say thanks for the free tips!
+
+There is a lot more explaining here to be done i just don't have the time to do it. Just check the project.
 
 More Info:
 
