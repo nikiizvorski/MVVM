@@ -28,6 +28,16 @@ What does Data Binding do?
 
 - Check the support docs it is easy and well explained. And check the project please. Don't be lazy.
 
+Databinding?
+
+- android:text="@{viewModel.user.firstName}"
+
+Two Way DataBinding?
+
+- yes it is supported directly now!
+
+- just add android:text="@={...}" the = sign is the option here
+
 How is this project structured?
 
 - Views Layer - completely dumb exactly how they are supposed to BE.
@@ -66,6 +76,10 @@ How is MVVM bad or good?
 
 - There are some things left on purpose and i am pretty sure with a little reading you can manage to fix them.
 
+Don't belive what i am trying to explain to you for free?
+
+- Check latest GoogleIO if you don't belive me. And say thanks for the free tips!
+
 More Info:
 
 - https://developer.android.com/topic/libraries/data-binding/index.html
@@ -73,5 +87,3 @@ More Info:
 #### Author
 
 - Niki Izvorski (nikiizvorski@gmail.com)
-
-
