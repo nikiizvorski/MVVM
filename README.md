@@ -52,6 +52,10 @@ Observables?
 
 - It support Observables and ObservableFields Two way data binding etc..
 
+Custom Attributes?
+
+- Yeah requested for many years is already here you can create your custom attributes as much and how you want! Awesome.
+
 What is happening here?
 
 - Don' be lazy at first but here is what is going on pretty much.
